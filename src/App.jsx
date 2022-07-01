@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Nav/>
-      <h1 style={{marginTop:200}}>Welcome to React JS</h1>
+      <h1 style={{marginTop:100}}></h1>
       <Routes>
         <Route exact path="career" element={<Career/>}/>
         <Route exact path="funclass" element={<ClassComponent/>}/>

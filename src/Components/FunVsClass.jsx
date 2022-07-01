@@ -28,7 +28,7 @@ export default class ClassComponent extends Component
     {
         return(
             <div>
-                <a onClick={this.changecoursestate.bind(this)} href="#">Lifecycle Demo</a>
+                <a onClick={this.changecoursestate.bind(this)} href="https://www.google.co.in/">Lifecycle Demo</a>
                 <h4>Welcome to {this.state.course}</h4>
                 <p>{this.state.course} Training</p>
             </div>
