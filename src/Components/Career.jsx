@@ -4,7 +4,7 @@ import reactimg from '../Assets/reactimg.png';
 
 export default function Career()
 {
-    return<h2>Welcome to Career Component<br></br><Image/><br></br><Careers/></h2>
+    return<h2  style={{marginTop:100}}>Welcome to Career Component<br></br><Image/><br></br><Careers/></h2>
 }
 
 //export default Career;

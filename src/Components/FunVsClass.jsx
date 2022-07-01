@@ -2,26 +2,40 @@ import React,{Component} from "react";
 
 export default class ClassComponent extends Component
 {
-    render()
+    constructor(props)
     {
-        return<h3>Welcome to Class Component<br></br><ClassComponent1/></h3>
+        super(props);
+        this.state={course:"React"}; //course->property->initial state->React
     }
-}
 
-class ClassComponent1 extends Component
-{
+    UNSAFE_componentWillMount()
+    {
+        console.log("componentWillMount Phase");
+    }
+
+    UNSAFE_componentDidMount()
+    {
+        console.log("componentDidMount Phase");
+    }
+
+    //user-defined function ->change the state of course from React->React JS using setState
+    changecoursestate()
+    {
+        this.setState({course:"React JS"});
+    }
+
     render()
     {
         return(
             <div>
-                <pre>
-                maintain the state <br></br>
-                render-return<br></br>
-                extends-React.Component<br></br>
-                They support all functions which are 
-                present in the react lifecycle
-                </pre>
+                <a onClick={this.changecoursestate.bind(this)} href="#">Lifecycle Demo</a>
+                <h4>Welcome to {this.state.course}</h4>
+                <p>{this.state.course} Training</p>
             </div>
         )
+    }
+    UNSAFE_componentWillUpdate()
+    {
+        console.log("Updating phase");
     }
 }
