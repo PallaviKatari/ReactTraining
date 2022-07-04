@@ -1,28 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Career from './Components/Career';
 import ClassComponent from './Components/FunVsClass';
 import EmpDetails from './Components/Props';
 import Nav from './Components/Nav';
 import ValidateLogin from './Components/Login';
+import CourseDetails from './Components/Course';
+import MyCourseList from './Components/YourCourseList';
 //Routing
-import {Routes,Route} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+
 function App() {
+  const [name, setName] = useState(" ");
   return (
     <div className="App">
-      <Nav/>
-      <h1 style={{marginTop:100,color:'azure'}}>Welcome to React JS</h1>
+      <Nav />
+      <h1 style={{ marginTop: 100, color: 'azure' }}>Welcome {name} !!!</h1>
+      <Child changeName={(name) => setName(name)} />
       <Routes>
-        <Route exact path="career" element={<Career/>}/>
-        <Route exact path="funclass" element={<ClassComponent/>}/>
-        <Route exact path="emp" element={<EmpDetails name="John" designation="Developer"/>}/>
-        <Route exact path="login" element={<ValidateLogin/>}/>
+        <Route exact path="career" element={<Career />} />
+        <Route exact path="mycourse" element={<MyCourseList />} />
+        <Route exact path="funclass" element={<ClassComponent />} />
+        <Route exact path="emp" element={<EmpDetails name="John" designation="Developer" />} />
+        <Route exact path="login" element={<ValidateLogin />} />
+        <Route exact path="course" element={<CourseDetails />} />
       </Routes>
     </div>
   );
 }
 
 export default App;
+
+function Child(props) {
+  return (
+    <>
+      <button onClick={() => props.changeName("John")}>
+        Click Here!!!
+      </button>
+    </>
+  )
+}
 
 
 

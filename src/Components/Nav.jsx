@@ -24,7 +24,8 @@ export default function Nav() {
                                 </ul>
                             </li>
                             <li><Link to="career">Career</Link></li>
-                            <li><a href="https://www.cgvakindia.com/">Contact <span className="glyphicon glyphicon-envelope"></span></a></li>
+                            <li><Link to="course">Course</Link></li>
+                            <li><Link to="mycourse">My Courses</Link></li>
                         </ul>
                         <ul className="nav navbar-nav navbar-right">
                             <li><Link to="login"><span className="glyphicon glyphicon-log-in"></span>Login</Link></li>

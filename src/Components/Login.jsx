@@ -12,6 +12,8 @@ const ValidateLogin = () => {
 
     const onLogin = (e) => {
         e.preventDefault();
+        email=" ";
+        password=" ";
         if (email === "") {
             setError(true)
             return;
@@ -36,6 +38,7 @@ const ValidateLogin = () => {
                 {
                     error && <span style={{ color: 'red', fontFamily: 'cursive', marginLeft: 5 }}>Enter Email</span>
                 }
+                <h3 style={{ color:'azure' }}>DataBinding: {email}</h3>
                 <br></br><br></br>
                 <label className="labelfield">Password</label>
                 <input type="password" onChange={(e) => setPassword(e.target.value)}
@@ -45,6 +48,7 @@ const ValidateLogin = () => {
                 }
                 <br></br>
                 <button type="submit" className="inputbutton">Submit</button>
+                <br></br>
             </form>
         </div>
     )

@@ -1,5 +1,7 @@
 import React from 'react';
 
+const userdetails=['Peter','John','Jancy','Paul','Prince'];
+
 const employeedetails=(props)=>
 {
     return(
@@ -8,6 +10,9 @@ const employeedetails=(props)=>
         {trainingdetails}
         {comdetails}
         <Constdemo/>
+        <br>
+        </br>
+        <Filteruser/>
         </>
     );
 }
@@ -32,5 +37,25 @@ const company="IBM";
 const trainingdetails=<h4 style={{color:'azure'}}>Welcome to {course} training</h4>
 
 const comdetails=<h4 style={{color:'azure'}}>Welcome to {company}</h4>
+
+function Filteruser() {
+    return (
+        <>
+        {userdetails.filter(user=>user.includes('J')).map
+        (
+            username=>
+            (
+                <h4 style={{color:'azure'}} key={username.index}>
+                    Username: {username}
+                </h4>
+
+            )
+
+        )}
+            
+        </>
+
+    )
+}
 
 export default employeedetails;
