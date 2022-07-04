@@ -27,8 +27,8 @@ export default function Nav() {
                             <li><a href="https://www.cgvakindia.com/">Contact <span className="glyphicon glyphicon-envelope"></span></a></li>
                         </ul>
                         <ul className="nav navbar-nav navbar-right">
-                            <li><a href="https://www.google.co.in/"><span className="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                            <li><a href="https://www.google.co.in/"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
+                            <li><Link to="login"><span className="glyphicon glyphicon-log-in"></span>Login</Link></li>
+                            <li><a href="https://www.google.co.in/"><span className="glyphicon glyphicon-user"></span>Sign Up</a></li>
                         </ul>
                     </div>
                 </div>

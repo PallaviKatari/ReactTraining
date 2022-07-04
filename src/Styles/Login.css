@@ -1,0 +1,22 @@
+.labelfield
+{
+    margin-right: 30px;
+    color:aliceblue;
+}
+.inputfield
+{
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    text-align: center;
+    width: 250px;
+
+}
+
+.inputbutton
+{
+    margin-top: 10px;
+    border-radius: 15px;
+    color:blue;
+    background-color: lightcyan;
+}
