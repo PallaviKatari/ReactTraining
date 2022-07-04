@@ -12,13 +12,11 @@ const ValidateLogin = () => {
 
     const onLogin = (e) => {
         e.preventDefault();
-        if (email === "") 
-        {
+        if (email === "") {
             setError(true)
             return;
         }
-        else if(password==="")
-        {
+        else if (password === "") {
             setError1(true)
             return;
         }
@@ -30,20 +28,20 @@ const ValidateLogin = () => {
         }
     }
     return (
-        <div>
+        <div style={{ marginTop: 50 }}>
             <form onSubmit={onLogin}>
                 <label className="labelfield">Email</label>
                 <input type="email" onChange={(e) => setEmail(e.target.value)}
-                    value={email} className="inputfield"/> 
+                    value={email} className="inputfield" placeholder="Enter email" />
                 {
-                    error && <span style={{ color: 'red' }}>Enter Email</span>
+                    error && <span style={{ color: 'red', fontFamily: 'cursive', marginLeft: 5 }}>Enter Email</span>
                 }
                 <br></br><br></br>
                 <label className="labelfield">Password</label>
                 <input type="password" onChange={(e) => setPassword(e.target.value)}
-                    value={password} className="inputfield"></input>
+                    value={password} className="inputfield" placeholder="Enter password"></input>
                 {
-                    error1 && <span style={{ color: 'red' }}>Enter Password</span>
+                    error1 && <span style={{ color: 'red', fontFamily: 'cursive', marginLeft: 5 }}>Enter Password</span>
                 }
                 <br></br>
                 <button type="submit" className="inputbutton">Submit</button>
