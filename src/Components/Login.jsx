@@ -6,17 +6,25 @@ const ValidateLogin = () => {
 
     const [error, setError] = useState(false)
 
+    const [error1, setError1] = useState(false)
+
     const [password, setPassword] = useState("")
 
     const onLogin = (e) => {
         e.preventDefault();
-        if (email === "" && password === "") {
+        if (email === "") 
+        {
             setError(true)
-            console.log(email+" "+password)
+            return;
+        }
+        else if(password==="")
+        {
+            setError1(true)
             return;
         }
         else {
             setError(false)
+            setError1(false)
             alert("Login Successful")
             return;
         }
@@ -35,7 +43,7 @@ const ValidateLogin = () => {
                 <input type="password" onChange={(e) => setPassword(e.target.value)}
                     value={password} className="inputfield"></input>
                 {
-                    error && <span style={{ color: 'red' }}>Enter Password</span>
+                    error1 && <span style={{ color: 'red' }}>Enter Password</span>
                 }
                 <br></br>
                 <button type="submit" className="inputbutton">Submit</button>
