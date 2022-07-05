@@ -24,7 +24,7 @@ export default class UserDetails extends Component
                 <div className="col-md-4"  key={u.id}>
                 <div className="card" style={{borderRadius:30,borderStyle:'dashed',borderColor:'azure'}}>
                     <div className="card-body" >
-                        <img src={u.avatar} className="img" alt='' style={{opacity:1.0,}}/>
+                        <img src={u.avatar} className="img" alt='' style={{mixBlendMode:'normal'}}/>
                         <center>
                             <h1 className="card-title" style={{color:'azure'}}>NAME: {u.name}</h1>
                             <h3 className="card-title" style={{color:'azure'}}>ROLE: {u.role}</h3>
