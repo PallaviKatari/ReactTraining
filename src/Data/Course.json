@@ -1,0 +1,45 @@
+[
+    {
+        "id":1,
+        "coursename":"DOTNET",
+        "courseimage":"https://th.bing.com/th/id/OIP._w4kEUAb7-YMEOc46aFcWQHaHD?pid=ImgDet&rs=1",
+        "courseduration":"72 HOURS"
+
+    },
+    {
+        "id":2,
+        "coursename":"JAVA",
+        "courseimage":"https://cdn.vox-cdn.com/thumbor/_AobZZDt_RVStktVR7mUZpBkovc=/0x0:640x427/1200x800/filters:focal(0x0:640x427)/cdn.vox-cdn.com/assets/1087137/java_logo_640.jpg",
+        "courseduration":"80 HOURS"
+
+    },
+    {
+        "id":3,
+        "coursename":"PYTHON",
+        "courseimage":"https://www.freepngimg.com/download/android/72537-icons-python-programming-computer-social-tutorial.png",
+        "courseduration":"40 HOURS"
+
+    },
+    {
+        "id":4,
+        "coursename":"PHP",
+        "courseimage":"https://th.bing.com/th/id/R.1379e2c069798b5aaf81fac899ff76bf?rik=C%2bbzIGYtMYexog&riu=http%3a%2f%2fpngimg.com%2fuploads%2fphp%2fphp_PNG12.png&ehk=CMslpDyieHiNYpA2oVMKIT6euUCRGrt1B8HcBv9BJ6s%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1",
+        "courseduration":"52 HOURS"
+
+    },
+    {
+        "id":5,
+        "coursename":"TESTING",
+        "courseimage":"https://th.bing.com/th/id/OIP.8kG3bakJMa-emtAroXSeKQHaGE?pid=ImgDet&rs=1",
+        "courseduration":"30 HOURS"
+
+    },
+    {
+        "id":6,
+        "coursename":"DATABASE",
+        "courseimage":"https://www.reachmarketing.com/wp-content/uploads/2013/03/CentralIntelligence-720.png",
+        "courseduration":"20 HOURS"
+
+    }
+
+]

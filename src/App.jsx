@@ -14,7 +14,7 @@ function App() {
   const [name, setName] = useState(" ");
   return (
     <div className="App">
-      <Nav />
+      <Nav/>
       <h1 style={{ marginTop: 100, color: 'azure' }}>Welcome {name} !!!</h1>
       <Child changeName={(name) => setName(name)} />
       <Routes>
@@ -34,9 +34,9 @@ export default App;
 function Child(props) {
   return (
     <>
-      <button onClick={() => props.changeName("John")}>
+      <a onClick={() => props.changeName("Have a Nice Day!!!")}>
         Click Here!!!
-      </button>
+      </a>
     </>
   )
 }

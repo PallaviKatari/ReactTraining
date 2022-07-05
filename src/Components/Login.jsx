@@ -12,8 +12,6 @@ const ValidateLogin = () => {
 
     const onLogin = (e) => {
         e.preventDefault();
-        email=" ";
-        password=" ";
         if (email === "") {
             setError(true)
             return;
