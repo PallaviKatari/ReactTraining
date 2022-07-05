@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import '../Styles/Career.css';
+import UserDetails from "./Users";
 //import reactimg from '../Assets/reactimg.png';
 
 // export default function Career()
@@ -45,6 +46,12 @@ export default class Career extends Component {
     render() {
         return (
             <>
+            <h1 style={{color:'azure'}}>TESTIMONIALS OF PLACED TRAINEES</h1>
+            <hr></hr>
+            <br>
+            </br>
+            <UserDetails/>
+            <br></br>
                 <div className="divtag">
                     <h1>DOTNET</h1>
                     {
