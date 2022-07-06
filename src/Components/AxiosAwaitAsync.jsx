@@ -10,7 +10,7 @@ export default function AwaitAsync(){
 
     useEffect(()=>{
         async function getPost(){
-            const response=await client.get("/2");
+            const response=await client.get("/5");
             setPost(response.data);
         }
         getPost();

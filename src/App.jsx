@@ -17,8 +17,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <h1 style={{ marginTop: 100, color: 'azure' }}>Welcome {name} !!!</h1>
-      <h3 style={{ marginTop: 100, color: 'azure' }}><AwaitAsync/></h3>
+      <h1 style={{ marginTop: 100, color: 'azure' }}>Welcome {name} !!! <AwaitAsync/></h1>
       <Child changeName={(name) => setName(name)} />
       <Routes>
         <Route exact path="career" element={<Career />} />
