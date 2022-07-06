@@ -7,6 +7,8 @@ import Nav from './Components/Nav';
 import ValidateLogin from './Components/Login';
 import CourseDetails from './Components/Course';
 import MyCourseList from './Components/YourCourseList';
+import OnlineAd from './Components/AxiosDemo';
+import AwaitAsync from './Components/AxiosAwaitAsync';
 //Routing
 import { Routes, Route } from 'react-router-dom';
 
@@ -14,8 +16,9 @@ function App() {
   const [name, setName] = useState(" ");
   return (
     <div className="App">
-      <Nav/>
+      <Nav />
       <h1 style={{ marginTop: 100, color: 'azure' }}>Welcome {name} !!!</h1>
+      <h3 style={{ marginTop: 100, color: 'azure' }}><AwaitAsync/></h3>
       <Child changeName={(name) => setName(name)} />
       <Routes>
         <Route exact path="career" element={<Career />} />
@@ -25,6 +28,10 @@ function App() {
         <Route exact path="login" element={<ValidateLogin />} />
         <Route exact path="course" element={<CourseDetails />} />
       </Routes>
+      <nav className="navbar navbar-inverse navbar-fixed-bottom">
+        <h4 style={{ textAlign: "center", color: "azure" }}>LIGHTNING DEALS IN AMAZON</h4>
+        <OnlineAd />
+      </nav>
     </div>
   );
 }
