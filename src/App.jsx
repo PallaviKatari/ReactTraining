@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Career from './Components/Career';
-import ClassComponent from './Components/FunVsClass';
+import Destructure from './Components/FunVsClass';
 import EmpDetails from './Components/Props';
 import Nav from './Components/Nav';
 import ValidateLogin from './Components/Login';
@@ -20,7 +20,7 @@ function App() {
       <Routes>
         <Route exact path="career" element={<Career />} />
         <Route exact path="mycourse" element={<MyCourseList />} />
-        <Route exact path="funclass" element={<ClassComponent />} />
+        <Route exact path="destructure" element={<Destructure />} />
         <Route exact path="emp" element={<EmpDetails name="John" designation="Developer" />} />
         <Route exact path="login" element={<ValidateLogin />} />
         <Route exact path="course" element={<CourseDetails />} />

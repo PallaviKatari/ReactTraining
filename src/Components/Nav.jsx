@@ -16,11 +16,10 @@ export default function Nav() {
                     <div className="collapse navbar-collapse" id="myNavbar">
                         <ul className="nav navbar-nav">
                             <li className="active"><Link to="/">Home</Link></li>
-                            <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="https://www.google.co.in/">React Concepts<span
+                            <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="https://www.google.co.in/">Course Details<span
                                 className="caret"></span></a>
                                 <ul className="dropdown-menu">
-                                    <li><Link to="funclass">Components</Link></li>
-                                    <li><Link to="emp">Props</Link></li>
+                                    <li><Link to="destructure">Ongoing Course Details</Link></li>
                                 </ul>
                             </li>
                             <li><Link to="career">Career</Link></li>

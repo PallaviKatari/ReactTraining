@@ -29,6 +29,9 @@ const ValidateLogin = () => {
     }
     return (
         <div style={{ marginTop: 50 }}>
+            <SpreadOperator/>
+            <br></br>
+            <br></br>
             <form onSubmit={onLogin}>
                 <label className="labelfield">Email</label>
                 <input type="email" onChange={(e) => setEmail(e.target.value)}
@@ -52,4 +55,61 @@ const ValidateLogin = () => {
     )
 }
 
-export default ValidateLogin
+export default ValidateLogin;
+
+
+function SpreadOperator()
+{
+    const actualimg=
+    {
+        src:"https://th.bing.com/th/id/R.32adacdb13aac8155a64a40d9ca50b6a?rik=6gkvUOrB40qpqg&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fy%2fo%2fN%2fR%2fL%2ff%2flogin-blue-hi.png&ehk=mfje0T0CCrtU9jCzsoFR8xtQlWmTKachh5RlaJ%2bvu4g%3d&risl=&pid=ImgRaw&r=0",
+        alt:"This is a Login Image"
+    };
+    const actualimg1=
+    {
+        src:"https://cdn3.iconfinder.com/data/icons/security-3-1/512/access-512.png",
+        alt:"This is a Login Image1"
+    };
+
+    const formattedimg=
+    {
+        ...actualimg,
+        height:100,
+        width:100,
+    };
+    const formattedimg1=
+    {
+        ...actualimg1,
+        height:100,
+        width:100,
+    };
+
+    return(
+        <>
+        {/* <img {...formattedimg}/> */}
+        <Image {...formattedimg}/>
+        <br></br>
+        <br></br>
+        <Image1 {...formattedimg1}/>
+        </>           
+    )
+}
+
+function Image(props)
+{
+    return(
+        <>
+        <img {...props}/>
+        </>
+    )
+}
+
+function Image1(props)
+{
+    return(
+        <>
+        <img {...props}/>
+        </>
+    )
+}
+
