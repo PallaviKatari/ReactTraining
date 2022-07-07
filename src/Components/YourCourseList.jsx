@@ -85,6 +85,8 @@ export default function MyCourseList() {
                         <CourseDetails />
                         <br></br><br></br>
                         <button type="button" id='ibtn' onClick={reqSentHandler} className="btn btn-primary">Apply Now</button>
+                        <br></br>
+                        <button type="button" className="btn btn-primary"><a href="https://rzp.io/i/MFiCxPD"alt="" style={{color:'azure'}}>Book Slot</a></button>
                     </>
                 </div>
             )

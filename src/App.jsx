@@ -9,6 +9,8 @@ import CourseDetails from './Components/Course';
 import MyCourseList from './Components/YourCourseList';
 import OnlineAd from './Components/AxiosDemo';
 import AwaitAsync from './Components/AxiosAwaitAsync';
+import DemouseToggle from './Components/Rooks';
+import TopPerformers from './Components/useAxiosHook';
 //Routing
 import { Routes, Route } from 'react-router-dom';
 
@@ -19,7 +21,9 @@ function App() {
       <Nav />
       <h1 style={{ marginTop: 100, color: 'azure' }}>Welcome {name} !!! <AwaitAsync/></h1>
       <Child changeName={(name) => setName(name)} />
+      <DemouseToggle/>
       <Routes>
+        <Route exact path="performers" element={<TopPerformers />} />
         <Route exact path="career" element={<Career />} />
         <Route exact path="mycourse" element={<MyCourseList />} />
         <Route exact path="destructure" element={<Destructure />} />

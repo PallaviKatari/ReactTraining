@@ -20,6 +20,7 @@ export default function Nav() {
                                 className="caret"></span></a>
                                 <ul className="dropdown-menu">
                                     <li><Link to="destructure">Ongoing Course Details</Link></li>
+                                    <li><Link to="performers">Top Performers</Link></li>
                                 </ul>
                             </li>
                             <li><Link to="career">Career</Link></li>
