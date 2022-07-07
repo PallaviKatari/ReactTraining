@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Styles/Login.css";
+import "../Styles/ReactHookForm.css";
 //Functional components->Stateless->to make them stateful->implement the hooks
 const ValidateLogin = () => {
     const [email, setEmail] = useState("")
@@ -33,7 +33,7 @@ const ValidateLogin = () => {
             <br></br>
             <br></br>
             <form onSubmit={onLogin}>
-                <label className="labelfield">Email</label>
+                <label className="labelfield" style={{color:'azure'}}>Email</label>
                 <input type="email" onChange={(e) => setEmail(e.target.value)}
                     value={email} className="inputfield" placeholder="Enter email" />
                 {
@@ -41,7 +41,7 @@ const ValidateLogin = () => {
                 }
                 <h3 style={{ color:'azure' }}>DataBinding: {email}</h3>
                 <br></br><br></br>
-                <label className="labelfield">Password</label>
+                <label className="labelfield" style={{color:'azure'}}>Password</label>
                 <input type="password" onChange={(e) => setPassword(e.target.value)}
                     value={password} className="inputfield" placeholder="Enter password"></input>
                 {
@@ -74,23 +74,21 @@ function SpreadOperator()
     const formattedimg=
     {
         ...actualimg,
-        height:100,
-        width:100,
+        height:50,
+        width:50,
     };
     const formattedimg1=
     {
         ...actualimg1,
-        height:100,
-        width:100,
+        height:50,
+        width:50,
     };
 
     return(
         <>
         {/* <img {...formattedimg}/> */}
-        <Image {...formattedimg}/>
-        <br></br>
-        <br></br>
-        <Image1 {...formattedimg1}/>
+        <span><Image {...formattedimg}/>
+        <Image1 {...formattedimg1} style={{marginLeft:20}}/></span>
         </>           
     )
 }

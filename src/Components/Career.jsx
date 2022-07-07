@@ -46,12 +46,6 @@ export default class Career extends Component {
     render() {
         return (
             <>
-            <h1 style={{color:'azure'}}>TESTIMONIALS OF PLACED TRAINEES</h1>
-            <hr></hr>
-            <br>
-            </br>
-            <UserDetails/>
-            <br></br>
                 <div className="divtag">
                     <h1>DOTNET</h1>
                     {
@@ -59,13 +53,13 @@ export default class Career extends Component {
                         this.state.show ?
                             (
                                 <>
-                                    <button onClick={this.toggleShowHide} style={{color:'blueviolet'}}>-</button>
+                                    <button onClick={this.toggleShowHide} style={{ color: 'blueviolet' }}>-</button>
                                     <br></br>
                                     <h4>A Full-stack .NET Developer is an expert who can build and manage all the stacks of an application meaning Front-end, Back-end, database, version control, server and APIs. This learning path focus on C#, SQL Server, ASP.NET MVC, Web API, Entity Framework Code First, Bootstrap and HTML5 which are required to build a real-world application with .NET.</h4>
                                 </>
                             ) : (
                                 <>
-                                    <button onClick={this.toggleShowHide} style={{color:'blueviolet'}}>+</button>
+                                    <button onClick={this.toggleShowHide} style={{ color: 'blueviolet' }}>+</button>
                                     <br></br>
                                 </>
                             )
@@ -73,9 +67,10 @@ export default class Career extends Component {
                 </div>
                 <br></br>
                 <CareerJava />
-                <br>
-                </br>
                 <CareerPHP />
+                <h2 style={{ color: 'azure' }}>TESTIMONIALS OF PLACED TRAINEES</h2>
+                <UserDetails />
+            
             </>
         )
     }
@@ -101,13 +96,13 @@ class CareerJava extends Component {
                     this.state.show ?
                         (
                             <>
-                                <button onClick={this.toggleShowHide} style={{color:'blueviolet'}}>-</button>
+                                <button onClick={this.toggleShowHide} style={{ color: 'blueviolet' }}>-</button>
                                 <br></br>
                                 <h4>A Java Full Stack Developer is a developer who has expertise and deep knowledge of frameworks and tools used in Java full stack development like Core Java, servlets, APIs, database, web architecture, etc. A Full Stack Java developer can build whole Java applications including front end, back-end, database, APIs, server and version control.</h4>
                             </>
                         ) : (
                             <>
-                                <button onClick={this.toggleShowHide} style={{color:'blueviolet'}}><i class="fa fa-caret-square-o-down" aria-hidden="true"></i></button>
+                                <button onClick={this.toggleShowHide} style={{ color: 'blueviolet' }}><i class="fa fa-caret-square-o-down" aria-hidden="true"></i></button>
                                 <br></br>
                             </>
                         )
@@ -136,13 +131,13 @@ class CareerPHP extends Component {
                     this.state.show ?
                         (
                             <>
-                                <button onClick={this.toggleShowHide} style={{color:'blueviolet'}}>-</button>
+                                <button onClick={this.toggleShowHide} style={{ color: 'blueviolet' }}>-</button>
                                 <br></br>
                                 <h4>A professional web developer who uses hypertext pre-processor in order to develop dynamic web applications, can also conclude that PHP developers are full stack developers who use HTML, CSS, javascript, and PHP to create a complete web development solution.</h4>
                             </>
                         ) : (
                             <>
-                                <button onClick={this.toggleShowHide} style={{color:'blueviolet'}}>Read More</button>
+                                <button onClick={this.toggleShowHide} style={{ color: 'blueviolet' }}>Read More</button>
                                 <br></br>
                             </>
                         )

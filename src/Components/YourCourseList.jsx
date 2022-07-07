@@ -94,13 +94,12 @@ export default function MyCourseList() {
         </>
     )
 }
-
 const Infocard = () => {
 
     const InfocardCards = (cards) => {
         return (
-            <div className="col-md-4">
-                <div className="card Infocard cardbg" style={{borderRadius:30,borderStyle:'dashed'}}>
+            <div className="col-md-1">
+                <div className="card cardbg" style={{borderRadius:30,borderStyle:'dashed'}}>
                     <div className="card-body" key={cards.id} >
                         <img src={cards.courseimage} className="img" alt=''/>
                         <center>
@@ -114,7 +113,7 @@ const Infocard = () => {
     }
     return (
         <>
-            <div className="container-fluid infocard">
+            <div className="infocard">
                 <div className='row'>
                     {CourseData.map(InfocardCards)}
                 </div>

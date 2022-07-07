@@ -11,31 +11,38 @@ import OnlineAd from './Components/AxiosDemo';
 import AwaitAsync from './Components/AxiosAwaitAsync';
 import DemouseToggle from './Components/Rooks';
 import TopPerformers from './Components/useAxiosHook';
+import HookForm from './Components/ReactHookForm';
+import SignUp from './Components/SignUp';
 //Routing
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 
 function App() {
   const [name, setName] = useState(" ");
   return (
+    <>
     <div className="App">
       <Nav />
-      <h1 style={{ marginTop: 100, color: 'azure' }}>Welcome {name} !!! <AwaitAsync/></h1>
-      <Child changeName={(name) => setName(name)} />
-      <DemouseToggle/>
+      {/* <h1 style={{ marginTop: 100, color: 'azure' }}>Welcome {name} !!! <AwaitAsync/></h1>
+      <Child changeName={(name) => setName(name)} /> */}
+      <div style={{ marginTop: 100, color: 'azure' }}><DemouseToggle/></div>
       <Routes>
+        <Route exact path="login" element={<HookForm />} />
         <Route exact path="performers" element={<TopPerformers />} />
         <Route exact path="career" element={<Career />} />
         <Route exact path="mycourse" element={<MyCourseList />} />
         <Route exact path="destructure" element={<Destructure />} />
         <Route exact path="emp" element={<EmpDetails name="John" designation="Developer" />} />
-        <Route exact path="login" element={<ValidateLogin />} />
+        <Route exact path="signup" element={<SignUp />} />
         <Route exact path="course" element={<CourseDetails />} />
       </Routes>
-      <nav className="navbar navbar-inverse navbar-fixed-bottom">
-        <h4 style={{ textAlign: "center", color: "azure" }}>LIGHTNING DEALS IN AMAZON</h4>
-        <OnlineAd />
-      </nav>
     </div>
+    <footer>
+    <nav className="navbar navbar-inverse navbar-fixed-bottom" style={{marginTop:500}}>
+    <h4 style={{textAlign: "center", color: "azure" }}>LIGHTNING DEALS IN AMAZON</h4>
+    <OnlineAd />
+  </nav>
+  </footer>
+  </>
   );
 }
 

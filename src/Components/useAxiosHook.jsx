@@ -29,7 +29,7 @@ export default function TopPerformers()
         <>
         <div className="row" style={{marginLeft:50}}>
                 {data.map(u=>
-                <div className="col-md-2" style={{marginLeft:10,marginRight:10,marginTop:10,marginBottom:10}} key={u.id}>
+                <div className="col-md-4" style={{marginLeft:10,marginRight:10,marginTop:10,marginBottom:10}} key={u.id}>
                 <div className="card">
                     <div className="card-body" style={{borderRadius:15,borderStyle:'groove',borderColor:'violet'}}>
                         <img src="https://static.vecteezy.com/system/resources/previews/000/551/599/original/user-icon-vector.jpg" className="img" alt='' style={{marginTop:10,mixBlendMode:'normal',borderRadius:20}}/>
